@@ -39,6 +39,7 @@ function TodoItem(props) {
             />
             <span style={ props.item.todos.completed ? completedStyle : style } >{props.item.todos.todo}</span>   
             <DeleteIcon 
+                className="delete-icon"
                 onClick={handleClick}
             />
         </div>

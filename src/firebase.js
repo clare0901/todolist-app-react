@@ -1,15 +1,13 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
 import firebase from 'firebase'
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyCKhG9s5nUeZS5MPguG7QX6wyct4W5wvFg",
-    authDomain: "todolist-28200.firebaseapp.com",
-    projectId: "todolist-28200",
-    storageBucket: "todolist-28200.appspot.com",
-    messagingSenderId: "702726220328",
-    appId: "1:702726220328:web:edff1c2dd73a9ffb2ce31d",
-    measurementId: "G-SVDGRBQ2F3"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 });
 
 const db = firebaseApp.firestore();

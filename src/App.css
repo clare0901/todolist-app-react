@@ -1,12 +1,14 @@
 body {
   font-family: "Times New Roman", Times, serif;
   background-color: whitesmoke;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .todo-list {
   background-color: white;
   margin: 0 auto 100px auto;
-  width: 50%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,4 +82,9 @@ input[type="checkbox"]:focus {
   display: block;
   text-align: center;
   margin: 0 0 50px 0;
+}
+
+.delete-icon{
+  display: flex;
+  flex-direction: row-reverse;
 }
